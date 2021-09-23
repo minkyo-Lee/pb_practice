@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* font */
+@font-face {
+    /* light */
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    /* medium */
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    /* bold */
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* reset */
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top; -webkit-text-size-adjust:none; }
+body {font-family: 'GmarketSansLight'; font-size:14px; color:#151515;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+ul, ol, dl { list-style:none; }
+img, video { border:0; vertical-align:top; }
+a, a:link {color:#333;text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {color:#333;text-decoration:none; }
+table { border-collapse:collapse; border-spacing:0; }
+input, select { vertical-align:middle; }
+label { cursor:pointer; }
+.blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address { font-style:normal; font-weight:normal; }
+p,li,dd{line-height:1.5em}
+ 
+/* common */
+.hidden{position: absolute; left: -1000px; top:0; display: block; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+/* layout */
+#wrap{display: flex;}
+#header{position: fixed;top:0;left:0;width: 100%;background-color: #153481;}
+
+/* #header */
+#header>.header_inner{position:relative;width: 1420px;height: 90px;margin: 0 auto;}
+#header>.header_inner::after{content: '';clear: both;display: block;}
+#header>.header_inner>h1.header_logo{position: absolute;top:40%;left: 41.2%;width: 250px;height: 18px;}
+#header>.header_inner>h1.header_logo>a{width: 100%;}
+#header>.header_inner>h1.header_logo>a>img{width: 100%;}
+#header>.header_inner>nav.gnb_menu{float: left;display: flex;flex-flow: row wrap;}
+#header>.header_inner>nav.gnb_menu li{}
+#header>.header_inner>nav.gnb_menu li>a{display: block;padding-right: 30px;line-height: 90px;font-size: 14px;color: #fff;}
+#header>.header_inner>nav.gnb_menu>.gnb_lft{overflow: hidden;width: 699px;}
+#header>.header_inner>nav.gnb_menu>.gnb_lft>li{float: left;}
+#header>.header_inner>nav.gnb_menu>.gnb_lft>li>a{}
+#header>.header_inner>nav.gnb_menu>.gnb_lft .sub_menu_wrap{position: absolute;overflow: hidden;width: 600px;height: 200px;padding: 20px;background-color: #fff;}
+#header>.header_inner>nav.gnb_menu>.gnb_lft .sub_menu_wrap>.sub_menu{float: left;display: flex;flex-flow: column wrap;width: 400px;height: 120px;}
+#header>.header_inner>nav.gnb_menu>.gnb_lft .sub_menu_wrap>.sub_menu>li{width: 200px;}
+#header>.header_inner>nav.gnb_menu>.gnb_lft .sub_menu_wrap>.sub_menu>li>a{display: block;width: 100%;padding-right: 0;line-height: 30px;color: #999;}
+#header>.header_inner>nav.gnb_menu>.gnb_lft .sub_menu_wrap>.sub_menu>li>a:hover{color: #153481;}
+#header>.header_inner>nav.gnb_menu>.gnb_lft .sub_menu_wrap>.sub_menu_banner{float: right;}
+#header>.header_inner>nav.gnb_menu>.gnb_rgt{overflow: hidden;width: 699px;}
+#header>.header_inner>nav.gnb_menu>.gnb_rgt>li{float: right;}
+#header>.header_inner>nav.gnb_menu>.gnb_rgt>li>a{}
+#header>.header_inner>.search_btn{float: right;line-height: 90px;font-size: 22px;color: #fff;}
+
+#header>.header_inner>.search_box_wrap{display: none;position: fixed;top:0;left:0;width: 100vw;height: 100vh;background-color: rgba(0, 0, 0, 0.5);}
+#header>.header_inner>.search_box_wrap>.search_box{display: flex;justify-content: space-between; width: 100%;height: 90px;padding: 20px 50px;box-sizing: border-box; background-color: #fff;}
+#header>.header_inner>.search_box_wrap>.search_box>.search_box>form{width: 95%;}
+#header>.header_inner>.search_box_wrap>.search_box>.search_box>form>.search_box>form>input[type=text]{width: 100%;height: 50px;font-size: 24px;}
+#header>.header_inner>.search_box_wrap>.search_box>.close_btn{line-height: 50px;font-size: 22px;}
+
+/* header에 넣을 효과 */
+/*  1. One-depth > li    hover 시 underline 왼쪽부터 생기는 것
+    2. One-depth > 세번째 li    hover 시 submenu    display : none 해제
+    3. search-icon  click 시 search 창 나타나기
+ */
