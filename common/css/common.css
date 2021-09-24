@@ -38,7 +38,7 @@ p,li,dd{line-height:1.5em}
 
 /* layout */
 #wrap{display: flex;}
-#header{position: fixed;top:0;left:0;width: 100%;background-color: #153481;}
+#header{position: fixed;top:0;left:0;width: 100%;height: 90px;background-color: #153481;}
 
 /* #header */
 #header>.header_inner{position:relative;width: 1420px;height: 90px;margin: 0 auto;}
@@ -48,29 +48,28 @@ p,li,dd{line-height:1.5em}
 #header>.header_inner>h1.header_logo>a>img{width: 100%;}
 #header>.header_inner>nav.gnb_menu{float: left;display: flex;flex-flow: row wrap;}
 #header>.header_inner>nav.gnb_menu li{}
-#header>.header_inner>nav.gnb_menu li>a{display: block;padding-right: 30px;line-height: 90px;font-size: 14px;color: #fff;}
-#header>.header_inner>nav.gnb_menu>.gnb_lft{overflow: hidden;width: 699px;}
+#header>.header_inner>nav.gnb_menu li>a{display: block;padding: 0 15px 0 15px;line-height: 88px;font-size: 14px;color: #fff;}
+#header>.header_inner>nav.gnb_menu>.gnb_lft{overflow: hidden;width: 689px;}
 #header>.header_inner>nav.gnb_menu>.gnb_lft>li{float: left;}
+#header>.header_inner>nav.gnb_menu>.gnb_lft>li:hover:after{transform: scaleX(1);}
+#header>.header_inner>nav.gnb_menu>.gnb_lft>li:after{display: block;content: '';border-bottom: 2px solid #fff;transform: scaleX(0);transition: transform 250ms ease-in-out;transform-origin: 0% 50%;}
 #header>.header_inner>nav.gnb_menu>.gnb_lft>li>a{}
-#header>.header_inner>nav.gnb_menu>.gnb_lft .sub_menu_wrap{position: absolute;overflow: hidden;width: 600px;height: 200px;padding: 20px;background-color: #fff;}
+#header>.header_inner>nav.gnb_menu>.gnb_lft .sub_menu_wrap{display: none;position: absolute;overflow: hidden;width: 600px;height: 200px;margin-top: 2px;padding: 20px;background-color: #fff;}
 #header>.header_inner>nav.gnb_menu>.gnb_lft .sub_menu_wrap>.sub_menu{float: left;display: flex;flex-flow: column wrap;width: 400px;height: 120px;}
 #header>.header_inner>nav.gnb_menu>.gnb_lft .sub_menu_wrap>.sub_menu>li{width: 200px;}
 #header>.header_inner>nav.gnb_menu>.gnb_lft .sub_menu_wrap>.sub_menu>li>a{display: block;width: 100%;padding-right: 0;line-height: 30px;color: #999;}
 #header>.header_inner>nav.gnb_menu>.gnb_lft .sub_menu_wrap>.sub_menu>li>a:hover{color: #153481;}
 #header>.header_inner>nav.gnb_menu>.gnb_lft .sub_menu_wrap>.sub_menu_banner{float: right;}
-#header>.header_inner>nav.gnb_menu>.gnb_rgt{overflow: hidden;width: 699px;}
+#header>.header_inner>nav.gnb_menu>.gnb_rgt{overflow: hidden;width: 689px;}
 #header>.header_inner>nav.gnb_menu>.gnb_rgt>li{float: right;}
+#header>.header_inner>nav.gnb_menu>.gnb_rgt>li:hover:after{transform: scaleX(1);}
+#header>.header_inner>nav.gnb_menu>.gnb_rgt>li:after{display: block;content: '';border-bottom: 2px solid #fff;transform: scaleX(0);transition: transform 250ms ease-in-out;transform-origin: 0% 50%;}
 #header>.header_inner>nav.gnb_menu>.gnb_rgt>li>a{}
-#header>.header_inner>.search_btn{float: right;line-height: 90px;font-size: 22px;color: #fff;}
-
+#header>.header_inner>.search_btn{float: right;padding: 0 10px;line-height: 90px;font-size: 22px;color: #fff;}
 #header>.header_inner>.search_box_wrap{display: none;position: fixed;top:0;left:0;width: 100vw;height: 100vh;background-color: rgba(0, 0, 0, 0.5);}
-#header>.header_inner>.search_box_wrap>.search_box{display: flex;justify-content: space-between; width: 100%;height: 90px;padding: 20px 50px;box-sizing: border-box; background-color: #fff;}
-#header>.header_inner>.search_box_wrap>.search_box>.search_box>form{width: 95%;}
-#header>.header_inner>.search_box_wrap>.search_box>.search_box>form>.search_box>form>input[type=text]{width: 100%;height: 50px;font-size: 24px;}
-#header>.header_inner>.search_box_wrap>.search_box>.close_btn{line-height: 50px;font-size: 22px;}
+#header>.header_inner>.search_box_wrap>.search_box{width: 100%;height: 90px;padding: 20px 50px;box-sizing: border-box;background-color: #fff;}
+#header>.header_inner>.search_box_wrap>.search_box::after{content: '';display: block;clear: both;}
+#header>.header_inner>.search_box_wrap>.search_box>form{float: left;width: 95%;}
+#header>.header_inner>.search_box_wrap>.search_box>form>input[type=text]{width: 100%;height: 50px;font-size: 24px;}
+#header>.header_inner>.search_box_wrap>.search_box>.close_btn{float: right;line-height: 50px;font-size: 22px;}
 
-/* header에 넣을 효과 */
-/*  1. One-depth > li    hover 시 underline 왼쪽부터 생기는 것
-    2. One-depth > 세번째 li    hover 시 submenu    display : none 해제
-    3. search-icon  click 시 search 창 나타나기
- */
