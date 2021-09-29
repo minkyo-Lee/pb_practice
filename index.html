@@ -19,11 +19,13 @@
     <script src="common/js/jquery-1.8.3.min.js"></script>
     <script src="common/js/jquery-migrate-1.4.1.min.js"></script>
     <script src="common/js/prefixfree.min.js"></script>
-    <script src="common/js/header.js"></script>
+    <script src="common/js/common.js"></script>
+    <script src="mainjs/main.js"></script>
 </head>
 <body>
     <div id="wrap">
         <header id="header">
+            <h2 class="hidden">헤더영역</h2>
             <div class="header_inner">
                 <h1 id="logo" class="header_logo"><a href="index.html"><img src="common/images/logo.svg" alt="로고이미지"></a></h1>
                 <nav id="gnb" class="gnb_menu">
@@ -63,6 +65,203 @@
                 </div>
             </div>
         </header>
+        <section id="container">
+            <h2 class="hidden">컨텐츠영역</h2>
+            <article class="insta_wrap">
+                <h3 class="ct_tit"><a href="#">@parisbaguette_kr</a></h3>
+                <p>Instagram</p>
+                <ul class="insta_list">
+                    <li><a href="#">
+                        <figure>
+                            <img src="images/insta_img.jpeg" alt="파바데이인스타이미지">
+                            <figcaption>
+                                <div class="insta_icon">
+                                    <p><span class="material-icons">favorite_border</span>448</p>
+                                    <p><span class="material-icons">chat_bubble_outline</span>5</p>
+                                </div>
+                                <span class="insta_txt">🤷🏻‍♀️ : 친구야 왜 1일엔 무조건 파바에 가는 거야? 🧑🏻‍🦰 : 매월 1일은 파바데이니까!</span>
+                            </figcaption>
+                        </figure>
+                    </a></li>
+                    <li><a href="#">
+                        <figure>
+                            <img src="images/insta_img02.jpeg" alt="더스퀘어신제품인스타이미지">
+                            <figcaption>
+                                <div class="insta_icon">
+                                    <p><span class="material-icons">favorite_border</span>699</p>
+                                    <p><span class="material-icons">chat_bubble_outline</span>20</p>
+                                </div>
+                                <span class="insta_txt">더스퀘어 신제품 도착🛬<br> 더스퀘어 라떼아트!</span>
+                            </figcaption>
+                        </figure>
+                    </a></li>
+                    <li><a href="#">
+                        <figure>
+                            <img src="images/insta_img03.jpeg" alt="더스퀘어라떼맛인스타이미지">
+                            <figcaption>
+                                <div class="insta_icon">
+                                    <p><span class="material-icons">favorite_border</span>537</p>
+                                    <p><span class="material-icons">chat_bubble_outline</span>3</p>
+                                </div>
+                                <span class="insta_txt">TAP! TAP! TAP!<br> 이제 케이크스토리도 깨 먹자!😆<br> 더스퀘어에 라떼아트가?</span>
+                            </figcaption>
+                        </figure>
+                    </a></li>
+                    <li><a href="#">
+                        <figure>
+                            <img src="images/insta_img04.jpeg" alt="김연경토스트인스타이미지">
+                            <figcaption>
+                                <div class="insta_icon">
+                                    <p><span class="material-icons">favorite_border</span>889</p>
+                                    <p><span class="material-icons">chat_bubble_outline</span>15</p>
+                                </div>
+                                <span class="insta_txt">파바가 알려주는 꿀팁 레시피!🍯<br> 김연경 토스트 궁금한 사람?</span>
+                            </figcaption>
+                        </figure>
+                    </a></li>
+                    <li><a href="#">
+                        <figure>
+                            <img src="images/insta_img05.jpeg" alt="김연경포토카드인스타이미지">
+                            <figcaption>
+                                <div class="insta_icon">
+                                    <p><span class="material-icons">favorite_border</span>1.6K</p>
+                                    <p><span class="material-icons">chat_bubble_outline</span>51</p>
+                                </div>
+                                <span class="insta_txt">시끄럽게 알립니다!!!!📢 여러분!! 파바에 김연경선수 포토카드가 나왔대요!! 하나도 아니고 둘도 아니고 무려 10종!</span>
+                            </figcaption>
+                        </figure>
+                    </a></li>
+                    <li><a href="#">
+                        <figure>
+                            <img src="images/insta_img06.jpeg" alt="전남친토스트인스타이미지">
+                            <figcaption>
+                                <div class="insta_icon">
+                                    <p><span class="material-icons">favorite_border</span>1.4K</p>
+                                    <p><span class="material-icons">chat_bubble_outline</span>26</p>
+                                </div>
+                                <span class="insta_txt">파바가 알려주는 꿀팁 레시피!🍯<br> 전남친 토스트 이렇게 먹으면 더 맛있어요!</span>
+                            </figcaption>
+                        </figure>       
+                    </a></li>
+                </ul>
+            </article>
+            <article class="notice_wrap">
+                <h3 class="hidden">안내컨텐츠영역</h3>
+                <ul class="notice_list">
+                    <li class="notice">
+                        <a href="#">
+                            <div class="notice_lft">
+                                <p class="notice_tit">고객센터</p>
+                                <p class="notice_txt">고객의 소리를 적극 경청하고 고객만족 향상 활동을 지속적으로 실천합니다.</p>
+                            </div>
+                            <div class="notice_rgt"><span class="material-icons">arrow_forward_ios</span></div>
+                        </a>
+                    </li>
+                    <li class="notice">
+                        <a href="#">
+                            <div class="notice_lft">
+                                <p class="notice_tit">제휴카드안내</p>
+                                <p class="notice_txt">해피포인트와 제휴카드 정보를 확인하세요.</p>
+                            </div>
+                            <div class="notice_rgt"><span class="material-icons">arrow_forward_ios</span></div>
+                        </a>
+                    </li>
+                    <li class="notice">
+                        <a href="#">
+                            <div class="notice_lft">
+                                <p class="notice_tit">공지사항</p>
+                                <p class="notice_txt">파리바게뜨 공지내용을 확인하세요.</p>
+                            </div>
+                            <div class="notice_rgt"><span class="material-icons">arrow_forward_ios</span></div>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <footer id="footer">
+            <h2 class="hidden">푸터영역</h2>
+            <div class="footer_top">
+                <div class="footer_inner">
+                    <div class="info_box">
+                        <h3 class="info_tit footer_tit">Info</h3>
+                        <ul class="info_list">
+                            <li><a href="#">브랜드소개</a></li>
+                            <li><a href="#">창업안내</a></li>
+                            <li><a href="#">거래희망사전등록</a></li>
+                            <li><a href="#">윤리신고센터</a></li>
+                            <li><a href="#">채용</a></li>
+                        </ul>                    
+                    </div>
+                    <div class="contact_box">
+                        <h3 class="contact_tit footer_tit">Contact Us</h3>
+                        <ul class="contact_list">
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">080-731-2027</a></li>
+                            <li>평일 09:00 - 17:00(점심 12:00 - 13:00)</li>
+                            <li><a href="#">고객칭찬</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo_box">
+                        <h3 class="logo_tit"><a href="#"><img src="common/images/footer_logo.png" alt="푸터로고이미지"></a></h3>
+                        <ul class="logo_list">
+                            <li><a href="#"><img src="common/images/footer_img.png" alt="CCM로고"></a></li>
+                            <li><a href="#"><img src="common/images/footer_img02.png" alt="NCSI로고"></a></li>
+                            <li><a href="#"><img src="common/images/footer_img03.png" alt="KCSI로고"></a></li>
+                            <li><a href="#"><img src="common/images/footer_img04.png" alt="KS-SQI로고"></a></li>
+                            <li><a href="#"><img src="common/images/footer_img05.png" alt="NBCI로고"></a></li>
+                        </ul>
+                    </div>
+                    <div class="sns_box">
+                        <h3 class="sns_tit footer_tit">Follow Us</h3>
+                        <ul class="sns_list">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                        <div class="family_sites">
+                            <a href="#" class="arrow">Brand Sites</a>
+                            <ul class="family_site_list">
+                                <li class="site_theme">파리크라상
+                                    <ul>
+                                        <li><a href="#">파리크라상</a></li>
+                                        <li><a href="#">파스쿠찌</a></li>
+                                        <li><a href="#">파리바게뜨 중국</a></li>
+                                    </ul>
+                                </li>
+                                <li class="site_theme">비알코리아(주)
+                                    <ul>
+                                        <li><a href="#">베스킨라빈스</a></li>
+                                        <li><a href="#">던킨도너츠</a></li>
+                                    </ul>
+                                </li>
+                                <li class="site_theme">기타
+                                    <ul>
+                                        <li><a href="#">(주)샤니</a></li>
+                                        <li><a href="#">(주)삼립식품</a></li>
+                                        <li><a href="#">해피포인트</a></li>
+                                        <li><a href="#">SPC외식브랜드</a></li>
+                                        <li><a href="#">디퀸즈케이터링</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="tos_box">
+                    <ul class="tos_list">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">영상정보처리기기운영관리방침</a></li>
+                    </ul>
+                </div>
+                <div class="address_box">
+                    <address>All Rights Reserved © PARIS BAGUETTE, PARIS CROISSANT CO., LTD. 경기도 성남시 중원구 상대원동 사기막골로 31번길 18 (주) 파리크라상</address>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

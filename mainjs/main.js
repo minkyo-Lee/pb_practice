@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $(".insta_list>li>a").mouseenter(function(){
+        $(this).find("figcaption").css('display','block');
+        $(this).find("img").css('filter','brightness(0.3)');
+    });
+    $(".insta_list>li>a").mouseleave(function(){
+        $(this).find("figcaption").css('display','none');
+        $(this).find("img").css('filter','brightness(1)');
+    });
+});

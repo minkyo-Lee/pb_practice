@@ -33,4 +33,13 @@ $(document).ready(function(){
         }
     );
 
+    $(".family_sites>a.arrow").toggle(
+        function(){
+            $(".family_site_list").css({'height':'430px','transition':'height 1s'})
+        },
+        function(){
+            $(".family_site_list").css({'height':'0px','transition':'all 1s'})
+        }
+    );
+
 });

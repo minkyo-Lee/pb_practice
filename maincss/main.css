@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* layout */
+#container{position: relative;width: 100%;margin-top: 90px;}
+/* common */
+.ct_tit{font-size: 24px;font-family: 'GmarketSansBold';}
+
+/* article.insta_wrap (z-index : 60-70)*/ 
+.insta_wrap{width: 100%;padding: 50px 0;text-align: center;}
+.insta_wrap>p{font-size: 14px;margin: 20px 0 30px;}
+.insta_wrap>.insta_list{display: flex;flex-flow: row nowrap;}
+.insta_wrap>.insta_list>li{flex:1;}
+.insta_wrap>.insta_list>li>a{display: block;width: 100%;}
+.insta_wrap>.insta_list>li>a>figure{position: relative;}
+.insta_wrap>.insta_list>li>a>figure>img{display: block;width: 100%;transition: filter 0.5s;}
+.insta_wrap>.insta_list>li>a>figure>figcaption{display: none;position: absolute;top:25%;width: 100%;padding: 0 10%;box-sizing: border-box;}
+.insta_wrap>.insta_list>li>a>figure>figcaption>.insta_icon{display: flex;flex-flow: row nowrap;justify-content: center;margin-bottom: 10px;}
+.insta_wrap>.insta_list>li>a>figure>figcaption>.insta_icon>p{color: #fff;margin-right: 10px;font-size: 18px;}
+.insta_wrap>.insta_list>li>a>figure>figcaption>.insta_icon>p>span{color: #fff;margin-right: 5px;font-size: 28px;}
+.insta_wrap>.insta_list>li>a>figure>figcaption>.insta_txt{color: #fff;}
+/* article.notice_wrap */
+.notice_wrap{width: 100%;height: 180px;}
+.notice_wrap>.notice_list{overflow: hidden;}
+.notice_wrap>.notice_list>li.notice{position: relative;float: left;width: 33%;height: 180px;}
+.notice_wrap>.notice_list>li.notice:after{opacity: 0;display: block;position: absolute;top:0;content: '';width: 100%;height: 180px;transition: all 0.8s;background: linear-gradient(0deg, rgba(51,51,51,0.5) 0%, rgba(0,0,0,0) 100%);}
+.notice_wrap>.notice_list>li.notice:hover:after{opacity: 1;}
+.notice_wrap>.notice_list>li.notice:nth-child(2){width: 34%;}
+.notice_wrap>.notice_list>li.notice:nth-child(2):after{width: 34%;}
+.notice_wrap>.notice_list>li.notice>a{overflow:hidden;display: block;width: 100%;height: 100%;padding: 40px 0 40px 40px;box-sizing: border-box;}
+.notice_wrap>.notice_list>li.notice>a>.notice_lft{display: flex;flex-flow: column nowrap;justify-content: center;float: left;width: 70%;height: 100px;}
+.notice_wrap>.notice_list>li.notice>a>.notice_lft>.notice_tit{line-height: 30px;font-size: 14px;color: #153481;}
+.notice_wrap>.notice_list>li.notice>a>.notice_lft>.notice_txt{line-height: 30px;font-size: 20px;font-weight: 700;color: rgb(82, 82, 82);}
+.notice_wrap>.notice_list>li.notice>a>.notice_rgt{float: right;width: 30%;padding-right: 30px;border-right: 1px solid #153481;box-sizing: border-box;text-align: right;}
+.notice_wrap>.notice_list>li.notice:last-child>a>.notice_rgt{border-right: none;}
+.notice_wrap>.notice_list>li.notice>a>.notice_rgt>span{font-size: 33px;line-height: 100px;color: rgb(90, 90, 90);}
+
+/* background의 linear-gradient는 transition 적용 x 
+    어떻게 해결? ----> opacity  : 배경에 after 이용
+*/
+
