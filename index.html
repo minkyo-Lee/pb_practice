@@ -65,10 +65,110 @@
                 </div>
             </div>
         </header>
+        <div id="visual">
+            <h2 class="hidden">비쥬얼영역</h2>
+            <div class="visual_inner">
+                <div class="visual_slide swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#"><img src="images/main_banner.jpeg" alt="김연경식빵이미지"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="images/main_banner02.jpeg" alt="가을밤빵이미지"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="images/main_banner03.jpeg" alt="한가위선물세트이미지"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="images/main_banner04.jpeg" alt="가평맛남샌드이미지"></a></div>
+                    </div>
+                    <div class="swiper-button-next" style="color: #ccc;"></div>
+                    <div class="swiper-button-prev" style="color: #ccc;"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
         <section id="container">
             <h2 class="hidden">컨텐츠영역</h2>
+            <article class="promotion_wrap">
+                <div class="promotion_inner">
+                    <h3 class="ct_tit"><a href="#">PROMOTION</a></h3>
+                    <span class="ct_link"><a href="#">SHOW MORE</a></span>
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <figure>
+                                    <a href="#"><img src="images/promo_img.jpeg" alt="노르디스크당첨자이미지"></a> 
+                                    <figcaption>
+                                        <p class="promo_tit"><a href="#">노르디스크 파바투게더 당첨자 발표!</a></p>
+                                        <a href="#" class="promo_link">READ MORE</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <a href="#"><img src="images/promo_img02.jpeg" alt="파바데이이미지"></a> 
+                                    <figcaption>
+                                        <p class="promo_tit"><a href="#">10월 1일은 파바데이!</a></p>
+                                        <a href="#" class="promo_link">READ MORE</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <a href="#"><img src="images/promo_img03.jpeg" alt="M포인트이미지"></a> 
+                                    <figcaption>
+                                        <p class="promo_tit"><a href="#">현대카드로 매일 50% M포인트 사용!</a></p>
+                                        <a href="#" class="promo_link">READ MORE</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <a href="#"><img src="images/promo_img04.jpeg" alt="네이버페이이미지"></a> 
+                                    <figcaption>
+                                        <p class="promo_tit"><a href="#">9월도 네이버페이 혜택!</a></p>
+                                        <a href="#" class="promo_link">READ MORE</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <a href="#"><img src="images/promo_img05.jpeg" alt="저스트에그이미지"></a> 
+                                    <figcaption>
+                                        <p class="promo_tit"><a href="#">땅이 낳은 에그, JUST Egg 한국 상륙!</a></p>
+                                        <a href="#" class="promo_link">READ MORE</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <a href="#"><img src="images/promo_img06.jpeg" alt="가을페어이미지"></a> 
+                                    <figcaption>
+                                        <p class="promo_tit"><a href="#">파바 가을페어</a></p>
+                                        <a href="#" class="promo_link">READ MORE</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <a href="#"><img src="images/promo_img07.jpeg" alt="김연경식빵이미지"></a> 
+                                    <figcaption>
+                                        <p class="promo_tit"><a href="#">김연경이 파바에 왔다!</a></p>
+                                        <a href="#" class="promo_link">READ MORE</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <a href="#"><img src="images/promo_img08.jpeg" alt="skt구독이미지"></a> 
+                                    <figcaption>
+                                        <p class="promo_tit"><a href="#">skt구독 이벤트!</a></p>
+                                        <a href="#" class="promo_link">READ MORE</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next" style="color: rgb(235, 235, 235);"></div>
+                        <div class="swiper-button-prev" style="color: rgb(235, 235, 235);;"></div>
+                    </div>     
+                </div>     
+            </article>
             <article class="insta_wrap">
-                <h3 class="ct_tit"><a href="#">@parisbaguette_kr</a></h3>
+                <h3 class="insta_tit"><a href="#">@parisbaguette_kr</a></h3>
                 <p>Instagram</p>
                 <ul class="insta_list">
                     <li><a href="#">
@@ -263,5 +363,34 @@
             </div>
         </footer>
     </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper2", {
+          slidesPerView: 4,
+          spaceBetween: 25,
+          loop: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+         },
+        });
+      </script>
 </body>
 </html>
